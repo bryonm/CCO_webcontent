@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* -- SAMPLE PAGES STYLES -- */
+
+    html {
+      box-sizing: border-box;
+      font-family: "Lato", sans-serif;
+    }
+
+    /* --- PUT THIS NAVIGATION CODE ON ALL PAGES --- */
+
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #841213;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 5px 8px 5px 25px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    .container_720 {
+      width: 720px;
+      border: 1px solid lightgrey;
+      margin: auto;
+      box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .container_1000 {
+      width: 1000px;
+      border: 1px solid lightgrey;
+      margin: auto;
+      box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .padding {
+      padding: 0 15px;
+    }
+
+    /* -- END SAMPLE PAGES STYLES -- */
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    @media (max-width: 1000px) {
+      .container_1000 {
+        width: 97%;
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      .sidenav {
+        padding: 15px 0;
+      }
+      .sidenav a {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+
+  <nav>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="catalog_home.html">catalog home</a>
+      <a href="about_our_catalog.html">about our catalog</a>
+      <a href="greatest_needs.html">greatest needs</a>
+      <a href="life-saving_meals.html">life-saving meals</a>
+      <a href="life-giving_water.html">life-giving water</a>
+      <a href="shoes_for_the_poor.html">shoes for the poor</a>
+      <a href="farm_animals.html">farm animals</a>
+      <a href="soap.html">soap</a>
+      <a href="milk.html">milk</a>
+      <a href="baby_care_kits.html">baby care kits</a>
+      <a href="kids_toys.html">kid's toys</a>
+      <a href="school_supplies.html">school supplies</a>
+      <a href="pack_a_lunch.html">pack a lunch</a>
+      <a href="elderly_care.html">elderly care</a>
+      <a href="medical_supply_kits.html">medical supply kits</a>
+      <a href="special_needs.html">special needs</a>
+      <a href="source_codes_used.html">source codes used</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </nav>
+  <div class="container_1000">
+    <h2 class="padding">Christmas 2017 Source Codes</h2>
+
+    <table>
+      <tr>
+        <th>CAMPAIGN</th>
+        <th>SOURCE CODE</th>
+      </tr>
+      <tr>
+        <td>MOST URGENT NEEDS</td>
+        <td>WC17CCGN</td>
+      </tr>
+      <tr>
+        <td>LIFE-SAVING MEALS</td>
+        <td>WC17CCGENFD</td>
+      </tr>
+      <tr>
+        <td>LIFE-GIVING WATER</td>
+        <td>WC17CCWATER</td>
+      </tr>
+      <tr>
+        <td>SHOES FOR THE POOR</td>
+        <td>WC17CCCLOTH</td>
+      </tr>
+      <tr>
+        <td>FARM ANIMALS</td>
+        <td>WC17CCANML</td>
+      </tr>
+      <tr>
+        <td>SOAP</td>
+        <td>WC17CCSOAP</td>
+      </tr>
+      <tr>
+        <td>MILK</td>
+        <td>WC17CCMILK</td>
+      </tr>
+      <tr>
+        <td>BABY CARE KITS</td>
+        <td>WC17CCBABYK</td>
+      </tr>
+      <tr>
+        <td>KID'S TOYS</td>
+        <td>WC17CCTOYS</td>
+      </tr>
+      <tr>
+        <td>SCHOOL SUPPLIES</td>
+        <td>WC17CCSCHL</td>
+      </tr>
+      <tr>
+        <td>PACK A LUNCH</td>
+        <td>WC17CCLNH</td>
+      </tr>
+      <tr>
+        <td>ELDERLY CARE</td>
+        <td>WC17CCELDER</td>
+      </tr>
+      <tr>
+        <td>AFRICA DROUGHT RELIEF</td>
+        <td>WC17CCAFA</td>
+      </tr>
+      <tr>
+        <td>MEDICAL SUPPLY KITS</td>
+        <td>WC17CCMEDSH</td>
+      </tr>
+      <tr>
+        <td>SPECIAL NEEDS</td>
+        <td>WC17CCSPCL</td>
+      </tr>
+    </table>
+  </div>
+  <!--NAVIGATION SCRIPT-->
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+</body>
+
+</html>
